@@ -18,8 +18,8 @@ def main():
             item = input("Enter the item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
-            else:
-                print("Item not found in the shopping list.")
+            # else:
+            #     print("Item not found in the shopping list.")
         elif choice == "3":
             print(shopping_list)
         elif choice == "4":
