@@ -23,7 +23,6 @@ def main():
                 print("please enter a valid menu item")
                 pass   
             shopping_list.remove(item)
-            pass
         elif choice == '3':
             print(shopping_list)
             pass
