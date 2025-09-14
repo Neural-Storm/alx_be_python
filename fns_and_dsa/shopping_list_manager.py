@@ -9,22 +9,20 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        try:
-            choice = input("Enter your choice: ")
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-            continue
+        choice = int(input("Enter your choice: "))
 
-        if choice == '1':
-            item = input("Which item would you like to add?")
+        if choice == 1:
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
-        elif choice == '2':
-            item = input("Which item would you like to remove?")
+        elif choice == 2:
+            item = input("Enter the item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
-        elif choice == '3':
+            else:
+                print("Item not found in the shopping list.")
+        elif choice == 3:
             print(shopping_list)
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
