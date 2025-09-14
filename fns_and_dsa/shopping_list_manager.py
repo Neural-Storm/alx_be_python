@@ -13,9 +13,15 @@ def main():
 
         if choice == '1':
             item = input("Which item would you like to add?")
+            if item is not str:
+                print("please enter a valid menu item")
+                pass
             shopping_list.append(item)
         elif choice == '2':
             item = input("Which item would you like to remove?")
+            if item is not str:
+                print("please enter a valid menu item")
+                pass1            
             shopping_list.remove(item)
             pass
         elif choice == '3':
