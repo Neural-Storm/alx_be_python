@@ -21,7 +21,7 @@ def main():
             item = input("Which item would you like to remove?")
             if item is not str:
                 print("please enter a valid menu item")
-                pass1            
+                pass   
             shopping_list.remove(item)
             pass
         elif choice == '3':
